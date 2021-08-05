@@ -1,0 +1,15 @@
+.bio-container {
+  margin: 30px;
+}
+
+.bio {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bio-text {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  width: 320px;
+}

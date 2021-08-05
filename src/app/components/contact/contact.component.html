@@ -1,0 +1,29 @@
+<div class="contact-form-container">
+    <div class="contact-form" *ngIf="!contactFormSent">
+        <div class="title">Who are you?</div>
+        <div class="form">
+            <mat-form-field class="first-name" appearance="outline">
+                <mat-label>First Name <span class="star">*</span></mat-label>
+                <input type="text" matInput>
+            </mat-form-field>
+            <mat-form-field class="last-name" appearance="outline">
+                <mat-label>Last Name</mat-label>
+                <input type="text" matInput>
+            </mat-form-field>
+            <mat-form-field class="email" appearance="outline">
+                <mat-label>Email <span class="star">*</span></mat-label>
+                <input type="email" matInput [formControl]="emailFormControl">
+            </mat-form-field>
+            <mat-form-field class="subject" appearance="outline">
+                <mat-label>Subject <span class="star">*</span></mat-label>
+                <input type="text" matInput>
+            </mat-form-field>
+            <mat-form-field class="message" appearance="outline">
+                <mat-label>Message <span class="star">*</span></mat-label>
+                <textarea matInput></textarea>
+            </mat-form-field>
+            <button class="send">Submit</button>
+        </div>
+    </div>
+    <div class="sent-message" *ngIf="contactFormSent">Sent!</div>
+</div>
